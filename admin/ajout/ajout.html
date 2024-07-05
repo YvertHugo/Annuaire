@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajout.css">
+    <title>Annuaire - Admin - Ajout employé</title>
+</head>
+<body>
+
+    <div class="login-box">
+
+        <h2>Ajouter un(e) employé(e)</h2>
+
+        <form id="add_form">
+
+          <div class="user-box">
+            <input type="text" id="prenom" name="" required>
+            <label>Prénom</label>
+          </div>
+
+          <div class="user-box">
+            <input type="text" id="nom" name="" required>
+            <label>Nom</label>
+          </div>
+
+          <div class="user-box">
+            <input type="tel" id="tel" name="" required>
+            <label>Numéro de téléphone</label>
+          </div>
+
+          <div class="user-box">
+            <input type="email" id="email" name="" required>
+            <label>E-mail</label>
+          </div>
+
+          <div class="user-box">
+            <select id="service" name="service" required>
+              <option>Choisir un Service</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <select id="site" name="site" required>
+              <option>Choisir un Site</option>
+            </select>
+          </div>
+
+          <button type="submit">Ajouter</button>
+
+        </form>
+
+      </div>
+    
+    <script src="ajout.js"></script>
+
+</body>
+</html>

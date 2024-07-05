@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Annuaire - Accueil</title>
+</head>
+
+<body>
+
+    <h1>Bienvenu sur l'annuaire de votre entreprise </h1>
+
+    <div class="container">
+        <a href="/annuaire/annuaire.html">
+            <div class="Title">
+                <h3>Annuaire
+                    <div class="Title__highlight"></div>
+                </h3>
+                <div class="Title__underline"></div>
+                <div aria-hidden class="Title__filled">Annuaire</div>
+            </div>
+        </a>
+    </div>
+    <div class="container">
+        <a href="/sites/site.html">
+            <div class="Title">
+                <h3>Sites
+                    <div class="Title__highlight"></div>
+                </h3>
+                <div class="Title__underline"></div>
+                <div aria-hidden class="Title__filled">Sites</div>
+            </div>
+        </a>
+    </div>
+    <div class="container">
+        <a href="/fonction/fonction.html">
+            <div class="Title">
+                <h3>Services
+                    <div class="Title__highlight"></div>
+                </h3>
+                <div class="Title__underline"></div>
+                <div aria-hidden class="Title__filled">Services</div>
+            </div>
+        </a>
+    </div>
+    
+    <script>
+        document.addEventListener('keydown', function(event) {
+            // Pour la combinaison Command (Meta) + Shift + V sur Mac
+            if (event.metaKey && event.shiftKey && event.key.toLowerCase() === 'v') {
+                window.location.href = '/admin/admin.html';
+            }
+        });
+    </script>
+</body>
+</html>

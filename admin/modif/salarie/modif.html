@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuaire - Modif</title>
+    <link rel="stylesheet" href="modif.css">
+</head>
+<body>
+    <div class="filter-container">
+        <input type="text" id="search-bar" placeholder="Rechercher...">
+        <label for="site-filter" style="margin-left: 150px; font-size: 20px">Site :</label>
+        <select id="site-filter" style="margin-right: 150px;">
+            <option value="">Tous</option>
+            <option value="Paris">Paris</option>
+            <option value="Nantes">Nantes</option>
+            <option value="Toulouse">Toulouse</option>
+            <option value="Nice">Nice</option>
+            <option value="Lille">Lille</option>
+        </select>
+
+        <label for="service-filter" style="font-size: 20px;">Service :</label>
+        <select id="service-filter">
+            <option value="">Tous</option>
+            <option value="comptabilite">Comptabilité</option>
+            <option value="production">Production</option>
+            <option value="accueil">Accueil</option>
+            <option value="informatique">Informatique</option>
+            <option value="commercial">Commercial</option>
+        </select>
+    </div>
+
+
+    <div class="container" id="salaries-container"></div>
+
+    <script src="modif.js"></script>
+</body>
+</html>

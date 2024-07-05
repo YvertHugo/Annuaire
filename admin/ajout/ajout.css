@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:900&display=swap");
+
+html {
+    height: 100%;
+    font-family: "Catamaran", sans-serif;
+    background: #CCC;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #555;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input,
+.login-box .user-box select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    appearance: none;
+}
+
+.login-box .user-box select {
+    cursor: pointer;
+    font-family: "Catamaran", sans-serif;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #CCC;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label,
+.login-box .user-box select:focus ~ label,
+.login-box .user-box select:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #CCC;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+button {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    padding: 3px 40px;
+    background: #555;
+    color: #ccc;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: "Catamaran", sans-serif;
+}

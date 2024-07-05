@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:900&display=swap");
+
+html,
+body {
+    font-family: "Catamaran", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+}
+
+#sites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    border-radius: 8px;
+    height: 550px;
+    width: 400px;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 80px -10px black;
+    overflow: hidden;
+}
+
+.card-blur {
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 1px);
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.card:hover .card-blur {
+    opacity: 0.6;
+}
+
+.footer {
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+}
+
+svg#curve {
+    position: absolute;
+    fill: transparent;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: 450px;
+}
+
+.info {
+    color: #fff;
+    padding-left: 26px;
+    margin-top: -130px;
+    transform: translateY(250px);
+    transition: transform 0.6s cubic-bezier(.31,1.21,.64,1.02);
+}
+
+.card:hover .info {
+    transform: translateY(0px);
+}
+
+.ville {
+    font-weight: bolder;
+    padding-top: 5px;
+    font-size: 3em;
+}
+
+.type {
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#button_modif {
+    position: absolute; background: #444;
+    border: 2px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 3px 25px;
+}
